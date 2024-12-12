@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Редактор з jQuery в iframe</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Підключаємо jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="rozvbuttonCont">
+        <div class="rozbtn">panel</div>
+        <div class="panelCont">
+            <select id="font">
+                <option value="Arial">Arial</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Montserrat">Montserrat</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Tahoma">Tahoma</option>
+            </select>
+            <button id="boldBtn">B</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="editor">
+            <label for="htmlCode">HTML код</label>
+            <textarea id="htmlCode" placeholder="Введіть HTML код"></textarea>
+    
+            <label for="cssCode">CSS код</label>
+            <textarea id="cssCode" placeholder="Введіть CSS код"></textarea>
+    
+            <label for="jsCode">JS код</label>
+            <textarea id="jsCode" placeholder="Введіть JS код"></textarea>
+    
+            <button id="runBtn">Запустити код</button>
+        </div>
+    
+        <div class="output">
+            <h2>Результат</h2>
+            <iframe id="resultFrame"></iframe>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
